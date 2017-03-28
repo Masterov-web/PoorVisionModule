@@ -53,3 +53,31 @@ For example:
 <script src="anotherScript.js"></script>
 </body>
 ```
+
+## Call the plugin
+```javascript
+$( document ).ready( function(){
+   $( 'body' ).pvm();
+ });
+```
+
+## Settings
+All settings are objects whose property values can be changed.
+
+The property of the object is a constant.
+
+The first part of the value (the one before the symbol double underscore `__`) also does not change.
+
+To set a custom value, you need to change the part that is after the symbol double underscore `__`
+
+### Default settings for the toolbar
+### Font size
+The settings section is controlled by a single object.
+```javascript
+'PVM_fontSize': {
+   'big': 'big__18',
+   'bigger': 'bigger__22',
+   'biggest': 'biggest__26'
+  }
+  ```
+
