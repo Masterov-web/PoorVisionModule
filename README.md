@@ -5,11 +5,14 @@
 pvm
 |--assets/
 |  |--pvm.core.css
+|  |--pvm.core.min.css
 |  |--pvm.theme.default.css
 |  |--pvm_icon.png
 |  
 |--jquery.pvm.js
+|--jquery.pvm.min.js
 |--pvm.preloader.js
+|--pvm.preloader.min.js
 |--readMe.md
 ```
 
