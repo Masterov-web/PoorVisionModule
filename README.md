@@ -188,7 +188,7 @@ To hide a block that should not be displayed in the version for people with visu
 ### Drop-down menus
 To create drop-down menus, you need to add the `.PVM-menu` class to the menu container. To add text to the button, you need to specify the attribute `data-menu-name` to the menu container (it is expected that the menu is formed from the lists `<ul>`).
 ```html
-<ul class="some-class PVM-menu" data-menu-name="Основное меню">
+<ul class="some-class PVM-menu" data-menu-name="Navigation">
  ...
 ```
 
