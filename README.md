@@ -129,3 +129,51 @@ The settings section is controlled by a single object.
    'serif': 'serif__serif',
  }
 ```
+
+Example of calling a plugin with settings
+```javascript
+$( document ).ready( function(){
+   $( 'body' ).pvm({
+     'PVM_fontSize': {
+       'big': 'big__25'
+     },
+
+     'PVM_backgroundColor': {
+       'theme1': 'theme1__#00f',
+       'theme2': 'theme2__#fff'
+     },
+
+     'PVM_color': {
+       'theme3': 'theme3__#0f0'
+     }
+   });
+ });
+```
+
+Now the first button in the "Font Size" section will set the font size to 25px instead of 18px by default. The remaining dimensions will remain unchanged.
+
+The first button in the "Select color" section will color the background of the site in blue instead of white by default, the second - in white, instead of black.
+
+The third button will leave the background of the site unchanged, but will make the font color green.
+
+### Prevent adding prefixes
+The plugin copies all the contents of the `<body>` and inserts it into the `pvm` container, in this container all classes get the `PVM-` prefix, and the id - `PVM_`.
+
+To prevent the addition of prefixes to certain classes, there is a `PVM_saveClasses` object with two properties: `singleClass` and `groupOfClasses`.
+
+The value of the `singleClass` property is an array of strings with the names of classes that do not need to be assigned prefixes.
+
+The value of `groupOfClasses` is a regular expression that allows you to select a group of classes that do not need to assign prefixes.
+```javascript
+$( document ).ready( function(){
+   $( 'body' ).pvm({
+   'PVM_saveClasses': {
+     'singleClass': [ 'class-name-1', 'class-name-2' ],
+     'groupOfClasses': /\bexample-?/i
+   }
+ })
+ ```
+ 
+Do not assign a prefix to classes `.class-name-1`, `.class-name-2`. (`SingleClass property`).
+
+Do not assign a prefix to all classes starting with `example-` (`groupOfClasses property`).
