@@ -81,3 +81,51 @@ The settings section is controlled by a single object.
   }
   ```
 
+### Background color
+The settings section is controlled by three objects.
+
+Background color
+```javascript
+'PVM_backgroundColor': {
+   'theme1': 'theme1__#fff',
+   'theme2': 'theme2__#000',
+   'theme3': 'theme3__#ff0'
+  },
+```
+
+Font Color
+```javascript
+'PVM_color': {
+   'theme1': 'theme1__#000',
+   'theme2': 'theme2__#fff',
+   'theme3': 'theme3__#0ff'
+  },
+ ```
+ 
+Border color
+```javascript
+'PVM_borderColor': {
+   'theme1': 'theme1__#000',
+   'theme2': 'theme2__#fff',
+   'theme3': 'theme3__#0ff'
+  }
+```
+
+### Letter spacing
+The settings section is controlled by a single object.
+```javascript
+'PVM_letterSpacing': {
+   'ls1': 'ls1__0',
+   'ls2': 'ls2__2',
+   'ls3': 'ls3__4'
+ }
+```
+
+### Font type
+The settings section is controlled by a single object.
+```javascript
+'PVM_fontFamily': {
+   'sans': 'sans__sans-serif',
+   'serif': 'serif__serif',
+ }
+```
