@@ -177,3 +177,30 @@ $( document ).ready( function(){
 Do not assign a prefix to classes `.class-name-1`, `.class-name-2`. (`SingleClass property`).
 
 Do not assign a prefix to all classes starting with `example-` (`groupOfClasses property`).
+
+## CSS classes
+### Hide block
+To hide a block that should not be displayed in the version for people with visual disabilities, you can assign it a `.PVM-hide class`.
+
+### Drop-down menus
+To create drop-down menus, you need to add the `.PVM-menu` class to the menu container. To add text to the button, you need to specify the attribute `data-menu-name` to the menu container (it is expected that the menu is formed from the lists `<ul>`).
+```html
+<ul class="some-class PVM-menu" data-menu-name="Основное меню">
+ ...
+```
+
+If there are several menus on the page, you can add a class and a unique signature for the button to each.
+
+## Preloader
+To hide the user from drawing page elements while the module is running, you can add a preloader (animated image representing the process of loading the page of the site).
+
+To install the preloader at the top of the page, just after the `<body>` tag, you need to add the following code:
+```html
+<script src="pvm/pvm.preloader.js"></script> 
+```
+
+## Compatibility
++Chrome
++Firefox
++Opera
++IE9 / 10/11 / eage
