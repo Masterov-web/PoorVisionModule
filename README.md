@@ -200,7 +200,7 @@ To install the preloader at the top of the page, just after the `<body>` tag, yo
 ```
 
 ## Compatibility
-+Chrome
-+Firefox
-+Opera
-+IE9 / 10/11 / eage
++ Chrome
++ Firefox
++ Opera
++ IE9 / 10/11 / eage
