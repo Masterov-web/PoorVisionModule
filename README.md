@@ -10,7 +10,7 @@ pvm
 |  
 |--jquery.pvm.js
 |--pvm.preloader.js
-|--readMe.txt
+|--readMe.md
 ```
 
 ## CSS
